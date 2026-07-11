@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="katon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuncham Venkat | Full-Stack AI & ML Developer Portfolio</title>
+  <meta name="description" content="Concentric-ripple styled fully-animated developer portfolio of Kuncham Venkat, an AI & Machine Learning Developer. Featuring keyboard telemetry overlays, biometric sharingan scanning circles, and console terminals.">
+  <meta name="keywords" content="Kuncham Venkat, AI, Machine Learning, Python, Sharingan, Concentric Circles, Interactive Portfolio">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <!-- Background Canvas for Plexus Particles -->
+  <canvas id="plexus-canvas"></canvas>
+
+  <!-- Interactive Screen Glitch & Telemetry Waves -->
+  <div class="hud-scanlines"></div>
+  <div class="hud-vignette"></div>
+
+  <!-- Keypress Diagnostic Character Overlay Canvas -->
+  <canvas id="keypress-canvas"></canvas>
+
+  <!-- DEVELOPER GRID INTERFACE -->
+  <div class="hud-container">
+    
+    <!-- Top Header Navigation -->
+    <header class="hud-header">
+      <div class="logo-box">
+        <span class="glitch-text" data-text="KV//DEVELOPER">KV//DEVELOPER</span>
+      </div>
+      
+      <nav class="hud-nav">
+        <ul>
+          <li><a href="#home" class="active"><span class="nav-num">01.</span>DASHBOARD</a></li>
+          <li><a href="#about"><span class="nav-num">02.</span>BIOGRAPHY</a></li>
+          <li><a href="#skills"><span class="nav-num">03.</span>TECH_STACK</a></li>
+          <li><a href="#projects"><span class="nav-num">04.</span>PROJECTS</a></li>
+          <li><a href="#contact"><span class="nav-num">05.</span>CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Side Panels -->
+    <div class="hud-sidebar left-sidebar">
+      <div class="sidebar-line"></div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/kuncham-venkat" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/kunchamvenkat057" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:kunchamvenkat057@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hud-sidebar right-sidebar">
+      <div class="sidebar-line"></div>
+    </div>
+
+    <!-- MAIN SCROLLABLE DASHBOARD SLIDES -->
+    <main class="hud-content">
+
+      <!-- HERO SECTION -->
+      <section id="home" class="hud-section hero-section">
+        <div class="section-grid">
+          <div class="hero-text-container">
+            <div class="hud-tag">WELCOME TO MY PORTFOLIO</div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="accent-text highlight-glitch" data-text="Venkat">Venkat</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              AI & Machine Learning Engineer
+            </h2>
+            <p class="hero-desc">
+              I specialize in Python, Machine Learning models, and natural language processing. I craft autonomous algorithms and structure complex data arrays.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn-hud main-btn">
+                <span class="btn-glitch-layer"></span>
+                <span class="btn-text">SEND MESSAGE <i class="fa-solid fa-scroll"></i></span>
+              </a>
+              <a href="#projects" class="btn-hud secondary-btn">
+                <span class="btn-text">VIEW PROJECTS</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sharingan Avatar Visual -->
+          <div class="hero-visual-container">
+            <div class="sharingan-blob-wrapper">
+              <!-- Sharingan Iris Layer (Spins on hover) -->
+              <div class="sharingan-iris">
+                <!-- Sharingan Rings -->
+                <div class="sharingan-ring outer-ring"></div>
+                <div class="sharingan-ring middle-ring"></div>
+                
+                <!-- Sharingan Tomoe elements (Rotates constantly) -->
+                <div class="sharingan-tomoes-container">
+                  <div class="sharingan-tomoe tomoe-1"></div>
+                  <div class="sharingan-tomoe tomoe-2"></div>
+                  <div class="sharingan-tomoe tomoe-3"></div>
+                </div>
+ 
+                <!-- Mangekyou Sharingan Star (Sasuke Style - Reveals on hover) -->
+                <div class="mangekyou-star">
+                  <div class="mangekyou-ellipse ellipse-1"></div>
+                  <div class="mangekyou-ellipse ellipse-2"></div>
+                  <div class="mangekyou-ellipse ellipse-3"></div>
+                </div>
+ 
+                <!-- Rinnegan Concentric Ripples (Concentric circles with Tomoes) -->
+                <div class="rinnegan-ripples">
+                  <div class="rinnegan-ring ring-1"></div>
+                  <div class="rinnegan-ring ring-2"></div>
+                  <div class="rinnegan-ring ring-3"></div>
+                  
+                  <div class="rinnegan-tomoe r-tomoe-1"></div>
+                  <div class="rinnegan-tomoe r-tomoe-2"></div>
+                  <div class="rinnegan-tomoe r-tomoe-3"></div>
+                  <div class="rinnegan-tomoe r-tomoe-4"></div>
+                  <div class="rinnegan-tomoe r-tomoe-5"></div>
+                  <div class="rinnegan-tomoe r-tomoe-6"></div>
+                </div>
+              </div>
+              
+              <div class="sharingan-scanner"></div>
+              
+              <!-- Profile Image Shape inside Pupil (Does not rotate) -->
+              <div class="avatar-frame sharingan-pupil">
+                <img src="assets/profile.jpg" alt="Kuncham Venkat Profile Photo" class="avatar-img">
+              </div>
+            </div>
+            
+            <!-- Rinnegan Floating Details Hologram Card -->
+            <div class="rinnegan-details-card">
+              <div class="card-avatar-wrapper">
+                <img src="assets/profile.jpg" alt="Kuncham Venkat Large Profile Photo" class="card-avatar-img">
+              </div>
+              <div class="card-title">KUNCHAM VENKAT</div>
+              <div class="card-subtitle">AI & ML Engineer</div>
+              <div class="card-details">
+                <div class="info-row">
+                  <span class="info-key">Graduation</span>
+                  <span class="info-val">B.Tech in CSE</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">Email</span>
+                  <span class="info-val email">kunchamvenkat057@gmail.com</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">Instagram</span>
+                  <span class="info-val"><a href="https://instagram.com/venkat__nani_" target="_blank" style="color: #d8b4fe; text-decoration: none;">venkat__nani_</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="hud-section about-section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-num">02.</span> BIOGRAPHY_SCROLL</h2>
+          <div class="header-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="cyber-panel about-panel">
+            <div class="panel-header">
+              <i class="fa-solid fa-scroll panel-icon"></i>
+              <span>DEVELOPER_DOSSIER.log</span>
+              <div class="panel-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>
+                <span class="terminal-prompt">></span> <strong>DEVELOPER:</strong> Kuncham Venkat <br>
+                <span class="terminal-prompt">></span> <strong>LOCATION:</strong> Bhadradri Kothagudem, Telangana, India <br>
+                <span class="terminal-prompt">></span> <strong>ROLE:</strong> AI & Machine Learning Developer <br>
+                <span class="terminal-prompt">></span> <strong>OBJECTIVE:</strong> To secure a challenging position in a reputed organization where I can utilize my skills in Python, Machine Learning, Artificial Intelligence, Data Analytics, and Software Development to forge intelligent automation systems.
+              </p>
+              <p>
+                I harnesses code architectures to engineer deep neural layers, automated voice interfaces, and sales forecasting algorithms. My engineering skills are highly aligned with system optimization and architectural growth.
+              </p>
+              
+              <div class="terminal-prompt-line">
+                <span class="terminal-prompt"></span> 
+              </div>
+            </div>
+          </div>
+
+          <div class="cyber-panel education-panel">
+            <div class="panel-header">
+              <i class="fa-solid fa-graduation-cap panel-icon"></i>
+              <span>ACADEMIC_HISTORY.db</span>
+              <div class="panel-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-title">B.Tech in Computer Science and Engineering</div>
+                  <div class="timeline-meta">JNTUH Wanaparthy (2023 - 2026) | CGPA: 7.69</div>
+                  <p class="timeline-desc">Training in advanced data structures, machine learning nodes, and software engineering principles.</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-title">Diploma in Mechanical Engineering</div>
+                  <div class="timeline-meta">Government Polytechnic Kothagudem (2020 - 2023) | CGPA: 9.08</div>
+                  <p class="timeline-desc">Mastered mechanics, vector physics, and structural layouts.</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-title">SSC (Secondary School Certificate)</div>
+                  <div class="timeline-meta">Govt High School Chunchupalli (2020) | CGPA: 10.0</div>
+                  <p class="timeline-desc">Acquired a perfect score in foundational science and algebra.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="hud-section skills-section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-num">03.</span> TECH_STACK</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- languages -->
+          <div class="cyber-panel">
+            <div class="panel-header">
+              <i class="fa-solid fa-fire panel-icon"></i>
+              <span>LANGUAGES (Core Development)</span>
+            </div>
+            <div class="panel-body">
+              <div class="skill-meter">
+                <div class="skill-label"><span>Python</span><span>60%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>JavaScript</span><span>50%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 75%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>SQL</span><span>60%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>HTML / CSS</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Data Science -->
+          <div class="cyber-panel">
+            <div class="panel-header">
+              <i class="fa-solid fa-brain panel-icon"></i>
+              <span>AI & DATA SCIENCE (Core Alg)</span>
+            </div>
+            <div class="panel-body">
+              <div class="skill-meter">
+                <div class="skill-label"><span>Machine Learning Models</span><span>90%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>NLP Models</span><span>30%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>Scikit-Learn / XGBoost</span><span>50%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>Pandas / NumPy Data Pipelines</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 90%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dev Tools & Platforms -->
+          <div class="cyber-panel">
+            <div class="panel-header">
+              <i class="fa-solid fa-dumbbell panel-icon"></i>
+              <span>DEV_TOOLS_&_PLATFORMS (Tactics)</span>
+            </div>
+            <div class="panel-body">
+              <div class="skill-meter">
+                <div class="skill-label"><span>Git & Version Control</span><span>30%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>AI Prompt Engineering</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>Power BI Control</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 80%"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-label"><span>Data Analytics & Reporting</span><span>45%</span></div>
+                <div class="skill-track"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="activities-panel cyber-panel">
+          <div class="panel-header">
+            <i class="fa-solid fa-circle-nodes panel-icon"></i>
+            <span>DEV_ECOSYSTEM.log</span>
+          </div>
+          <div class="panel-body activities-body">
+            <div class="activity-node">
+              <i class="fa-solid fa-fire-burner activity-icon"></i>
+              <div>
+                <strong>JNTUH Hackathon Competitor:</strong> Competed in the Hackathon at JNTUH Wanaparthy, building quick-strike automation prototypes.
+              </div>
+            </div>
+            <div class="activity-node">
+              <i class="fa-solid fa-leaf activity-icon"></i>
+              <div>
+                <strong>ML Open Source Contributor:</strong> Releasing python open-source modules to GitHub for community deployment.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="hud-section projects-section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-num">04.</span> PROJECT_RELEASES</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card cyber-panel tilt-card">
+            <div class="panel-header">
+              <span class="project-id">PROD_STAGE</span>
+              <span class="project-status-badge">COMPLETED</span>
+            </div>
+            <div class="panel-body project-body">
+              <h3 class="project-title">EDUMATE</h3>
+              <h4 class="project-subtitle">Notes to Knowledge Processing</h4>
+              <p class="project-desc">
+                An offline AI-powered educational system that processes study notes and reconstructs them into structured knowledge trees for learning environments without network accessibility.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>NLP</span>
+                <span>Prompting</span>
+                <span>Git</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/kunchamvenkat057" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> SOURCE_CODE</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card cyber-panel tilt-card">
+            <div class="panel-header">
+              <span class="project-id">BETA_STAGE</span>
+              <span class="project-status-badge">COMPLETED</span>
+            </div>
+            <div class="panel-body project-body">
+              <h3 class="project-title">BigMart Sales Predictor</h3>
+              <h4 class="project-subtitle">Sales Forecasting Module</h4>
+              <p class="project-desc">
+                Built advanced predictive forecasting algorithms using extensive exploratory data analysis (EDA), multi-level feature engineering, and ensemble modeling to project retail revenue.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Scikit-Learn</span>
+                <span>XGBoost</span>
+                <span>Matplotlib</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/kunchamvenkat057" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> SOURCE_CODE</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card cyber-panel tilt-card">
+            <div class="panel-header">
+              <span class="project-id">DEV_STAGE</span>
+              <span class="project-status-badge">COMPLETED</span>
+            </div>
+            <div class="panel-body project-body">
+              <h3 class="project-title">STT & TTS System</h3>
+              <h4 class="project-subtitle">Voice Processing Interface</h4>
+              <p class="project-desc">
+                Developed a robust, multilingual accessibility application linking Speech-to-Text and Text-to-Speech pipelines to facilitate real-time vocal communication and dictation loops.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>SpeechRecognition</span>
+                <span>gTTS</span>
+                <span>PyAudio</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/kunchamvenkat057" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> SOURCE_CODE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="hud-section contact-section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-num">05.</span> CONTACT_PORTAL</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Terminal & Circular Visual -->
+          <div class="summon-shell-wrapper">
+            <!-- Social Media Contact Box -->
+            <div class="cyber-panel contact-terminal">
+              <div class="panel-header">
+                <i class="fa-solid fa-share-nodes panel-icon"></i>
+                <span>SOCIAL_MEDIA</span>
+                <div class="terminal-ctrl">
+                  <span>LINKS_CONNECTED</span>
+                </div>
+              </div>
+              <div class="panel-body direct-contacts">
+                <div class="contact-card">
+                  <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="contact-details">
+                    <div class="contact-label">LINKEDIN</div>
+                    <a href="https://linkedin.com/in/kuncham-venkat" target="_blank" class="contact-value">linkedin.com/in/kuncham-venkat</a>
+                  </div>
+                </div>
+                
+                <div class="contact-card">
+                  <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                  <div class="contact-details">
+                    <div class="contact-label">GITHUB</div>
+                    <a href="https://github.com/kunchamvenkat057" target="_blank" class="contact-value">github.com/kunchamvenkat057</a>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                  <div class="contact-details">
+                    <div class="contact-label">INSTAGRAM</div>
+                    <a href="https://instagram.com/venkat__nani_" target="_blank" class="contact-value">instagram.com/venkat__nani_</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Graphic HUD Circle (Vector animated element) -->
+            <div class="summoning-seal-outer">
+              <div class="summoning-seal-circle circle-1"></div>
+              <div class="summoning-seal-circle circle-2"></div>
+              <div class="summoning-seal-symbols">SYS • CMD • DEV • NET • SEC • CLD</div>
+            </div>
+          </div>
+
+          <!-- Direct Node Directory -->
+          <div class="cyber-panel contact-info-panel">
+            <div class="panel-header">
+              <i class="fa-solid fa-address-book panel-icon"></i>
+              <span>DIRECTORY_CONTACTS.cfg</span>
+            </div>
+            <div class="panel-body direct-contacts">
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-details">
+                  <div class="contact-label">ENCRYPTED_MAIL</div>
+                  <a href="mailto:kunchamvenkat057@gmail.com" class="contact-value">kunchamvenkat057@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-details">
+                  <div class="contact-label">MOBILE_LINE</div>
+                  <a href="tel:+91**********" class="contact-value">+91 **********</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <div class="contact-details">
+                  <div class="contact-label">LOCATION</div>
+                  <div class="contact-value">Bhadradri Kothagudem, Telangana, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- FOOTER KEYSTROKE HUD -->
+    <footer class="hud-footer">
+    </footer>
+
+  </div>
+
+
+
+  <!-- Local Script -->
+  <script src="app.js"></script>
+</body>
+</html>
